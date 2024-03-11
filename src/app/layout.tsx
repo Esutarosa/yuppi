@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { inter } from "@/lib/fonts"
 import { cn } from '@/lib/utils'
-import "../styles/globals.scss"
+import "@/styles/globals.scss"
+import NavBar from "@/components/NavBar"
 
 export const metadata: Metadata = {
   title: "Yuppi",
@@ -17,13 +18,16 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        'antialiased',
+        'bg-background antialiased',
         inter.className
       )}>
-      <body className="min-h-screen antialiased">
-        <main className="container">
+      <body className="relative min-h-screen antialiased">
+        <NavBar />
+
+        <main className="">
           {children}
         </main>
+
       </body>
     </html>
   )

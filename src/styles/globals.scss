@@ -37,6 +37,14 @@
     --radius: 0.5rem;
   }
 
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -70,12 +78,12 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
 
-  body {
-    @apply bg-background text-foreground;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
