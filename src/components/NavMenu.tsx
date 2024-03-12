@@ -1,17 +1,26 @@
-import Logo from "./Logo"
-import NavLinks from "./NavLinks"
+'use client'
+
+import { useState } from "react"
+import { cn } from "@/lib/utils";
+import "@/styles/navbar.scss";
+import { AnimatePresence } from 'framer-motion';
+import NavLinks from "./NavLinks";
 
 const NavMenu = () => {
+  const [isActive, setIsActive] = useState(false)
+
   return (
     <>
-      <button>NavMenu</button>
-
-      <div className="fixed top-0 left-0 h-screen shadow bg-card border-r border-border/80 transition duration-300 bg-transition">
-        <nav className="h-full overflow-y-scroll no-scrollbar">
-          <Logo className="px-6 py-4 lg:py-6" />
-          <NavLinks />
-        </nav>
+      <div
+        className="w-16 h-16 rounded-full cursor-pointer flex items-center justify-center"
+        onClick={() => { setIsActive(!isActive) }}
+      >
+        <div className={cn("w-full burger-menu", isActive ? "burger-menu-active" : "")}></div>
       </div>
+
+      <AnimatePresence mode="wait">
+        {isActive && <NavLinks />}
+      </AnimatePresence>
     </>
   )
 }
