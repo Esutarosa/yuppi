@@ -7,8 +7,8 @@ const Logo = ({
 }) => {
   return (
     <div className={className}>
-      <Link href="/" className="flex items-center text-3xl font-semibold text-primary">
-        <p>Yuppi</p>
+      <Link href="/" className="">
+        <span className="">Yuppi</span>
       </Link>
     </div>
   )

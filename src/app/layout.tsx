@@ -21,7 +21,7 @@ export default function RootLayout({
         'bg-background antialiased',
         inter.className
       )}>
-      <body className="relative min-h-screen antialiased">
+      <body className="min-h-screen antialiased">
         <NavBar />
 
         <main className="">
