@@ -15,16 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={cn(
-        'bg-background antialiased',
+    <html lang="en">
+      <body className={cn(
+        'relative min-h-screen flex flex-col bg-background antialiased',
         inter.className
       )}>
-      <body className="min-h-screen antialiased">
         <NavBar />
 
-        <main className="">
+        <main className="container">
           {children}
         </main>
 
