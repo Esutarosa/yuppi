@@ -22,7 +22,7 @@ const NavLinks = ({
       initial="initial"
       animate="enter"
       exit="exit"
-      className="fixed top-0 left-0 h-screen border-r border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      className="fixed top-0 left-0 h-screen border-r border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 overflow-y-auto no-scrollbar"
     >
       <Logo className='h-20 flex items-center ml-20' />
       <div className='flex flex-col gap-10 mt-4'>
