@@ -1,6 +1,5 @@
 'use client'
 
-import { forwardRef, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { NAVBAR_LINKS } from '@/lib/constants';
 import Link from 'next/link';
@@ -8,12 +7,12 @@ import Logo from './Logo';
 
 const menuSlide = {
   initial: { x: "calc(-100%)" },
-  enter: { x: "0", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } },
-  exit: { x: "calc(-100%)", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }
+  enter: { x: "0", transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] } },
+  exit: { x: "calc(-100%)", transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] } }
 }
 
 const NavLinks = ({
-  onClick: closeMenuOnClick
+  onClick
 }: {
   onClick: () => void
 }) => {
@@ -36,7 +35,7 @@ const NavLinks = ({
               {item.data.map((item) => (
                 <li key={item.key} className="text-accent-foreground hover:bg-accent">
                   <Link
-                    onClick={closeMenuOnClick}
+                    onClick={onClick}
                     href={item.path}
                     className="flex items-center text-md px-6 py-2 pr-32"
                   >
