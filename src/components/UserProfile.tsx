@@ -1,12 +1,17 @@
-import { FC } from 'react'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar"
 
-interface UserProfileProps { }
+const UserProfile = () => {
 
-const UserProfile: FC<UserProfileProps> = ({ }) => {
+  const session = true
+
   return (
-    <div>
-      UserProfile
-    </div>
+    <>
+      <Avatar>
+        <AvatarImage src="https://avatars.githubusercontent.com/u/107695658?v=4" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+    </>
+
   )
 }
 
