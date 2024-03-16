@@ -10,7 +10,7 @@ const NavMenu = () => {
 
   const [isActive, setIsActive] = useState<boolean>(false)
 
-  const closeMenuOnClick = () => setIsActive(false)
+  const closeMenuOnClick = () => window.innerWidth <= 1024 ? setIsActive(false) : null
   const toggleMenu = () => setIsActive((prev) => !prev)
 
   return (
