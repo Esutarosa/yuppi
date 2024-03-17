@@ -2,7 +2,7 @@
 
 import Logo from "./Logo"
 import NavMenu from "./NavMenu"
-import UserProfile from "./UserProfile"
+import NavbarUserProfile from "./NavbarUserProfile"
 
 const NavBar = () => {
   return (
@@ -14,7 +14,7 @@ const NavBar = () => {
         </div>
 
         <div className="flex items-center">
-          <UserProfile />
+          <NavbarUserProfile />
         </div>
       </div>
     </header>
