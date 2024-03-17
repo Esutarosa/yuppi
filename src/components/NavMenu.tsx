@@ -20,7 +20,7 @@ const NavMenu = () => {
         className="bg-muted rounded-md cursor-pointer select-none z-50"
       >
         <div className={cn("w-10 h-10 flex items-center justify-center")}>
-          <IoIosMenu />
+          <IoIosMenu className="text-2xl" />
         </div>
       </div>
 

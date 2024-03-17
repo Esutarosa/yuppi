@@ -2,13 +2,6 @@ import { CiUser, CiSettings, CiGrid42, CiImageOn, CiGrid31, CiHeart, CiChat2 } f
 
 export const NAVBAR_LINKS: { title: string; data: { path: string; key: string; title: string; icon?: React.ComponentType<any>; }[] }[] = [
   {
-    title: 'Profile',
-    data: [
-      { path: '/profile', key: 'profile', title: 'My Profile', icon: CiUser },
-      { path: '/account/edit', key: 'edit-profile', title: 'Settings', icon: CiSettings },
-    ]
-  },
-  {
     title: 'General',
     data: [
       { path: '/illustrations', key: 'illustrations', title: 'Illustrations', icon: CiImageOn },
@@ -21,6 +14,16 @@ export const NAVBAR_LINKS: { title: string; data: { path: string; key: string; t
     data: [
       { path: '/forum', key: 'forum', title: 'Forum', icon: CiChat2 },
       { path: '/support', key: 'support', title: 'Support', icon: CiHeart },
+    ]
+  },
+]
+
+export const NAVBAR_LINKS_USER: { title: string; data: { path: string; key: string; title: string; icon?: React.ComponentType<any>; }[] }[] = [
+  {
+    title: 'Profile',
+    data: [
+      { path: '/profile', key: 'profile', title: 'My Profile', icon: CiUser },
+      { path: '/account/edit', key: 'edit-profile', title: 'Settings', icon: CiSettings },
     ]
   },
 ]

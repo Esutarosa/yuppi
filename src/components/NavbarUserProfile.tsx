@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import { NAVBAR_LINKS_USER } from "@/lib/constants";
 
 import {
   DropdownMenu,
@@ -12,7 +13,6 @@ import {
 } from "@/components/ui/DropdownMenu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar"
 import { CiUser } from "react-icons/ci";
-import { NAVBAR_LINKS } from "@/lib/constants";
 
 const NavbarUserProfile = () => {
 
@@ -37,7 +37,7 @@ const NavbarUserProfile = () => {
               </DropdownMenuLabel>
 
               <DropdownMenuSeparator />
-              {NAVBAR_LINKS.find(item => item.title === 'Profile')?.data.map((item) => (
+              {NAVBAR_LINKS_USER.find(item => item.title === 'Profile')?.data.map((item) => (
                 <DropdownMenuItem key={item.key}>
                   <Link href={item.path}>
                     {item.title}
