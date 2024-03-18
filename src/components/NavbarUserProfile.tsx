@@ -23,7 +23,7 @@ const NavbarUserProfile = () => {
       {session ? (
         <div>
           <DropdownMenu>
-            <DropdownMenuTrigger className="rounded-full">
+            <DropdownMenuTrigger className="flex items-center rounded-full">
               <Avatar className="w-12 h-12 select-none">
                 <AvatarImage src="https://avatars.githubusercontent.com/u/107695658?v=4" />
                 <AvatarFallback>CN</AvatarFallback>

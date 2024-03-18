@@ -3,6 +3,7 @@
 import Logo from "./Logo"
 import NavMenu from "./NavMenu"
 import NavbarUserProfile from "./NavbarUserProfile"
+import Search from "./Search"
 
 const NavBar = () => {
   return (
@@ -14,6 +15,7 @@ const NavBar = () => {
         </div>
 
         <div className="flex items-center">
+          <Search />
           <NavbarUserProfile />
         </div>
       </div>
