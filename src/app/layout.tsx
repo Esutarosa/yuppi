@@ -1,13 +1,14 @@
-import type { Metadata } from "next"
-import { inter } from "@/lib/fonts"
-import { cn } from '@/lib/utils'
-import "@/styles/globals.scss"
-import NavBar from "@/components/NavBar"
+import type { Metadata } from "next";
+import { cn } from '@/lib/utils';
+
+import { OpenSans } from '@/next.fonts';
+
+import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
   title: "Yuppi",
-  description: "Separate universe of mangas and light novels",
-}
+  description: "",
+};
 
 export default function RootLayout({
   children,
@@ -17,16 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
-        'relative min-h-screen flex flex-col bg-background antialiased',
-        inter.className
+        'relative min-w-[320px] min-h-screen bg-background antialiased',
+        OpenSans.className
       )}>
-        <NavBar />
-
-        <main className="container">
+        <main>
           {children}
         </main>
-
       </body>
     </html>
-  )
-}
+  );
+};
