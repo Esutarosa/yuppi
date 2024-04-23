@@ -1,6 +1,6 @@
-import { Open_Sans } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 
-export const OpenSans = Open_Sans({
+export const nunito = Nunito({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
   display: 'fallback',
