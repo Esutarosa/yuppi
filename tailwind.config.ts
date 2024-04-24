@@ -10,12 +10,9 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1400px',
+        xl: '1200px',
       },
     },
     extend: {
@@ -58,6 +55,9 @@ const config: Config = {
         lg: `var(--radius)`,
         md: `calc(var(--radius) - 2px)`,
         sm: 'calc(var(--radius) - 4px)',
+      },
+      maxWidth: {
+        '8xl': '75rem'
       },
       keyframes: {
         "accordion-down": {

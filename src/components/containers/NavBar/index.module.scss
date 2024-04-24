@@ -1,0 +1,11 @@
+.nav {
+  @apply w-full h-14 flex items-center;
+}
+
+.main {
+  @apply flex items-center justify-between w-full;
+}
+
+.navItems {
+  @apply flex items-center gap-4;
+}

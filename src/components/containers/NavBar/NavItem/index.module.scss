@@ -1,0 +1,26 @@
+.item {
+  @apply inline-flex items-center gap-1;
+
+  .label {
+    @apply transition-colors;
+  }
+
+  .icon {
+    @apply size-3 text-foreground/60 transition-colors mb-2;
+  }
+
+  &:hover .icon {
+    @apply text-foreground/80;
+  }
+
+  &.nav,
+  &.footer {
+    .label {
+      @apply text-foreground/60;
+
+      &:hover {
+        @apply text-foreground/80;
+      }
+    }
+  }
+}
