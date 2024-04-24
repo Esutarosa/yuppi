@@ -5,6 +5,8 @@ import type { FormattedMessage } from '@/types/i18n';
 
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import NavItem from '@/components/containers/NavBar/NavItem';
+import GitHub from '@/components/icons/social/GitHub';
+import Link from 'next/link';
 
 import style from './index.module.scss';
 
@@ -34,7 +36,13 @@ const NavBar: FC<NavBarProps> = ({
         </div>
 
         <div className={style.actionsWrapper}>
-
+          <Link
+            className={style.github}
+            href="https://github.com/Esutarosa/yuppi"
+            aria-label="Yuppi Quize Github"
+          >
+            <GitHub />
+          </Link>
         </div>
       </div>
     </nav>

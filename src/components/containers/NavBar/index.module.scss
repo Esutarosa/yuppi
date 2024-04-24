@@ -7,5 +7,17 @@
 }
 
 .navItems {
-  @apply flex items-center gap-4;
+  @apply flex items-center gap-2;
+}
+
+.actionsWrapper {
+  @apply inline-flex items-center justify-center gap-2;
+}
+
+.github {
+  @apply inline-flex items-center justify-center rounded-md transition-colors h-9 py-2 w-9 px-0;
+
+  &:hover {
+    @apply bg-accent text-accent-foreground
+  }
 }
