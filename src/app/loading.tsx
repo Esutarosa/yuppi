@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import style from "./index.module.scss";
+import style from "@/styles/loading/index.module.scss";
 
 const Loading: FC = () => {
   return (
