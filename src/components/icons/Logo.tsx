@@ -7,12 +7,9 @@ const Logo = ({
   className?: string
 }) => {
   return (
-    <div className={className}>
-      <Link href="/" className="flex items-center gap-2">
-        <Image src="/logo.svg" alt="Yuppi Logo" width={32} height={32} />
-        <span className="text-2xl">Yuppi</span>
-      </Link>
-    </div>
+    <Link href="/" className={className}>
+      <Image src="/logo.svg" alt="Yuppi Logo" width={24} height={24} />
+    </Link>
   )
 }
 
