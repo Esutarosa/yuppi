@@ -4,6 +4,9 @@ import { cn } from '@/lib/utils';
 import { nunito } from '@/next.fonts';
 import { ThemeProvider } from "@/providers/themeProvider";
 
+import WithNavBar from "@/components/withNavBar";
+import WithFooter from "@/components/withFooter";
+
 import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
@@ -23,9 +26,11 @@ export default function RootLayout({
         nunito.className
       )}>
         <ThemeProvider>
+          <WithNavBar />
           <main>
             {children}
           </main>
+          <WithFooter />
         </ThemeProvider>
       </body>
     </html>

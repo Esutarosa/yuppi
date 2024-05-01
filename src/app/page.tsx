@@ -5,10 +5,8 @@ import type { FC } from 'react';
 
 const Home: FC = () => {
   return (
-    <main>
-      <WithNavBar />
-
-      <WithFooter />
+    <main className='container'>
+      Hello, Yuppi!
     </main>
   );
 };
