@@ -4,13 +4,14 @@ import Hamburger from '@heroicons/react/24/solid/Bars3Icon';
 import type { FC, HTMLAttributeAnchorTarget } from 'react';
 import type { FormattedMessage } from '@/types/i18n';
 
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import ThemeToggle from '@/components/common/ThemeToggle';
 import NavItem from '@/components/containers/NavBar/NavItem';
 import GitHub from '@/components/icons/social/GitHub';
+import Logo from '@/components/icons/Logo';
 import Link from 'next/link';
 
 import style from './index.module.scss';
-import Logo from '@/components/icons/Logo';
 
 type NavBarProps = {
   navItems: Array<{
@@ -19,10 +20,12 @@ type NavBarProps = {
     key: string;
     target?: HTMLAttributeAnchorTarget | undefined;
   }>;
+  onThemeTogglerClick: () => void;
 };
 
 const NavBar: FC<NavBarProps> = ({
   navItems,
+  onThemeTogglerClick,
 }) => {
   return (
     <nav className={style.nav}>
@@ -47,6 +50,8 @@ const NavBar: FC<NavBarProps> = ({
           >
             <GitHub />
           </Link>
+
+          <ThemeToggle onClick={onThemeTogglerClick} />
         </div>
       </div>
 

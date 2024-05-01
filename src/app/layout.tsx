@@ -21,10 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(
-        'relative min-w-[320px] min-h-screen bg-background antialiased',
-        nunito.className
-      )}>
+      <body
+        suppressHydrationWarning
+        className={cn(
+          'relative min-w-[320px] min-h-screen bg-background antialiased',
+          nunito.className
+        )}
+      >
         <ThemeProvider>
           <WithNavBar />
           <main>
