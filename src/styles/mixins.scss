@@ -1,26 +1,28 @@
-
-@mixin flexy ($justify, $align, $direction, $wrap,) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-};
+/**
+ * Flexbox styles with optional parameters for justification and alignment
+ */
+@mixin flex($justify, $align, $direction, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
 
 /**
  * Applies styles when viewport width is at least specified width
  */
- @mixin min-width($width) {
-    @media screen and (min-width: $width) {
-      @content;
-    }
+@mixin min-width($width) {
+  @media screen and (min-width: $width) {
+    @content;
   }
-  
-  /**
-   * Applies styles when viewport width is at most specified width
-   */
-  @mixin max-width($width) {
-    @media screen and (max-width: $width) {
-      @content;
-    }
+}
+
+/**
+ * Applies styles when viewport width is at most specified width
+ */
+@mixin max-width($width) {
+  @media screen and (max-width: $width) {
+    @content;
   }
+}
