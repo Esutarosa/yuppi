@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cn } from '@/lib/utils';
 
 import { nunito } from '@/next.fonts';
+import { ThemeProvider } from "@/providers/themeProvider";
 
 import "@/styles/globals.scss";
 
@@ -21,9 +22,11 @@ export default function RootLayout({
         'relative min-w-[320px] min-h-screen bg-background antialiased',
         nunito.className
       )}>
-        <main>
-          {children}
-        </main>
+        <ThemeProvider>
+          <main>
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
