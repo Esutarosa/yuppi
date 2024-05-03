@@ -14,7 +14,7 @@ const WithNavBar: FC = () => {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
 
   return (
-    <header className='sticky top-0 z-50 min-w-[320px] w-full container border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90'>
+    <header className='sticky top-0 z-50 min-w-[320px] w-full container border-b sm:border-none border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90'>
       <NavBar
         onThemeTogglerClick={toggleCurrentTheme}
         navItems={QUIZE_CATEGORIES.map(({ name, href, key }) => ({

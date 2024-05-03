@@ -1,11 +1,10 @@
 'use client';
 
-import Hamburger from '@heroicons/react/24/solid/Bars3Icon';
 import type { FC, HTMLAttributeAnchorTarget } from 'react';
 import type { FormattedMessage } from '@/types/i18n';
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import ThemeToggle from '@/components/common/ThemeToggle';
+import NavMobile from '@/components/containers/NavBar/NavMobile';
 import NavItem from '@/components/containers/NavBar/NavItem';
 import GitHub from '@/components/icons/social/GitHub';
 import Logo from '@/components/icons/Logo';
@@ -53,25 +52,7 @@ const NavBar: FC<NavBarProps> = ({
 
           <ThemeToggle onClick={onThemeTogglerClick} />
 
-          <Sheet>
-            <SheetTrigger className='flex sm:hidden'>
-              <Hamburger className="h-8 w-8" />
-            </SheetTrigger>
-            <SheetContent side="top">
-              <div className={style.navMobileItems}>
-                {navItems.map(({ name, href, key, target }) => (
-                  <NavItem
-                    key={key}
-                    href={href}
-                    target={target}
-                    className={style.navMobileItem}
-                  >
-                    {name}
-                  </NavItem>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          <NavMobile navMobileItems={navItems} />
         </div>
       </div>
     </nav>

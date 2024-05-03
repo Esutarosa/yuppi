@@ -25,14 +25,3 @@
     @apply bg-accent text-accent-foreground
   }
 }
-
-/**  
- * Mobile
- */
-.navMobileItems {
-  @apply flex flex-col mt-8;
-}
-
-.navMobileItem {
-  @apply h-12;
-}
