@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes';
 import type { FC } from 'react';
 
-import NavBar from '@/components/containers/NavBar';
+import NavBar from '@/components/containers/Nav/NavBar';
 
 import { QUIZE_CATEGORIES } from '@/config/navigation';
 

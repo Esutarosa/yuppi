@@ -4,8 +4,8 @@ import type { FC, HTMLAttributeAnchorTarget } from 'react';
 import type { FormattedMessage } from '@/types/i18n';
 
 import ThemeToggle from '@/components/common/ThemeToggle';
-import NavMobile from '@/components/containers/NavBar/NavMobile';
-import NavItem from '@/components/containers/NavBar/NavItem';
+import NavMobile from '@/components/containers/Nav/NavMobile';
+import NavItem from '@/components/containers/Nav/NavItem';
 import GitHub from '@/components/icons/social/GitHub';
 import Logo from '@/components/icons/Logo';
 import Link from 'next/link';
