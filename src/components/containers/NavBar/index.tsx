@@ -33,7 +33,7 @@ const NavBar: FC<NavBarProps> = ({
         <Logo />
       </div>
 
-      <div className={style.main}>
+      <div className={style.content}>
         <div className={style.navItems}>
           {navItems.map(({ name, href, key, target }) => (
             <NavItem key={key} href={href} target={target}>
@@ -52,28 +52,28 @@ const NavBar: FC<NavBarProps> = ({
           </Link>
 
           <ThemeToggle onClick={onThemeTogglerClick} />
+
+          <Sheet>
+            <SheetTrigger className='flex sm:hidden'>
+              <Hamburger className="h-8 w-8" />
+            </SheetTrigger>
+            <SheetContent side="top">
+              <div className={style.navMobileItems}>
+                {navItems.map(({ name, href, key, target }) => (
+                  <NavItem
+                    key={key}
+                    href={href}
+                    target={target}
+                    className={style.navMobileItem}
+                  >
+                    {name}
+                  </NavItem>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-
-      <Sheet>
-        <SheetTrigger className='flex sm:hidden'>
-          <Hamburger className="h-8 w-8" />
-        </SheetTrigger>
-        <SheetContent side="top">
-          <div className={style.navMobileItems}>
-            {navItems.map(({ name, href, key, target }) => (
-              <NavItem
-                key={key}
-                href={href}
-                target={target}
-                className={style.navMobileItem}
-              >
-                {name}
-              </NavItem>
-            ))}
-          </div>
-        </SheetContent>
-      </Sheet>
     </nav>
   );
 };

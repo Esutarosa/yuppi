@@ -6,16 +6,16 @@
   @apply mr-8;
 }
 
-.main {
-  @apply hidden sm:flex items-center justify-between w-full;
+.content {
+  @apply flex items-center justify-between w-full;
 }
 
 .navItems {
-  @apply flex items-center gap-6;
+  @apply hidden sm:flex items-center gap-8;
 }
 
 .actionsWrapper {
-  @apply inline-flex items-center justify-center gap-2;
+  @apply inline-flex items-center justify-center gap-2 sm:flex ml-auto;
 }
 
 .github {
