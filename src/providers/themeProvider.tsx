@@ -7,10 +7,11 @@ import { THEME_STORAGE_KEY } from "@/../next.constants.mjs";
 
 export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => (
   <NextThemeProvider
-    attribute="data-theme"
+    attribute="class"
     defaultTheme="system"
     storageKey={THEME_STORAGE_KEY}
-    enableSystem={true}
+    disableTransitionOnChange
+    enableSystem
   >
     {children}
   </NextThemeProvider>
