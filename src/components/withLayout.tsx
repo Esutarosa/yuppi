@@ -1,4 +1,5 @@
 import type { FC, PropsWithChildren } from 'react';
+import type { Layouts } from '@/types/Layouts';
 
 import HomeLayout from '@/layouts/Home';
 import QuizesLayout from '@/layouts/Quizes';
@@ -15,7 +16,7 @@ const layouts = {
 type WithLayoutProps<L = Layouts> = PropsWithChildren<{ layout: L }>;
 
 const WithLayout: FC<WithLayoutProps<Layouts>> = ({ layout, children }) => {
-  const LayoutComponent = layouts[layout] ?? DefaultLayout;
+  const LayoutComponent = layouts[layout];
 
   return <LayoutComponent>{children}</LayoutComponent>;
 };
