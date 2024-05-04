@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { cn } from '@/lib/utils';
+import type { FC, PropsWithChildren } from 'react';
 
 import { nunito } from '@/next.fonts';
 import { ThemeProvider } from "@/providers/themeProvider";
-
-import WithNavBar from "@/components/withNavBar";
-import WithFooter from "@/components/withFooter";
+import BaseLayout from "@/layouts/Base";
 
 import "@/styles/globals.scss";
 
@@ -14,28 +12,16 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout: FC<PropsWithChildren> = async ({ children }) => {
   return (
-    <html lang="en">
-      <body
-        suppressHydrationWarning
-        className={cn(
-          'relative min-w-[320px] min-h-screen bg-background antialiased',
-          nunito.className
-        )}
-      >
+    <html className={nunito.className} lang="en">
+      <body suppressHydrationWarning>
         <ThemeProvider>
-          <WithNavBar />
-          <main>
-            {children}
-          </main>
-          <WithFooter />
+          <BaseLayout>{children}</BaseLayout>
         </ThemeProvider>
       </body>
     </html>
   );
 };
+
+export default RootLayout;
