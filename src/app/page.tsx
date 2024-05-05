@@ -1,9 +1,11 @@
 import type { FC } from 'react';
 
+import WithHero from '@/components/withHero';
+
 const Home: FC = () => {
   return (
-    <main>
-      Yuppi
+    <main className='relative'>
+      <WithHero />
     </main>
   );
 };
