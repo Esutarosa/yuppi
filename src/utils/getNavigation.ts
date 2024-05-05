@@ -1,8 +1,8 @@
 export const QUIZE_CATEGORIES = [
   {
-    name: "Quizes",
-    href: "/quizes",
-    key: "quizes",
+    name: "Quizzes",
+    href: "/quizzes",
+    key: "quizzes",
   },
   {
     name: "Problems",
