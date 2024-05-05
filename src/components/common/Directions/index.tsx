@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import Link from 'next/link';
 
-import { DIRECTION_ICONS as getDirections } from '@/utils/getDirections';
+import { DIRECTION_ICONS as getDirections } from '@/data/getDirections';
 
 const Directions: FC = () => {
   return (
