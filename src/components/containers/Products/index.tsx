@@ -1,10 +1,12 @@
 import type { FC } from 'react';
 
+import SectionContainer from '@/layouts/SectionContainer';
+
 const Products: FC = () => {
   return (
-    <section>
+    <SectionContainer>
       Products
-    </section>
+    </SectionContainer>
   );
 };
 
