@@ -7,7 +7,7 @@ const Footer: FC = () => {
   return (
     <footer className={cn("container ", styles.footer)}>
       <div className={styles.container}>
-        <p className={styles.copyright}>Copyright © 2024 Yuppi Quize</p>
+        <p className={styles.copyright}>Copyright © 2024 Yuppi Quizzes</p>
       </div>
     </footer>
   )
