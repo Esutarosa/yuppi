@@ -5,7 +5,7 @@ import type { FC } from 'react';
 
 import NavBar from '@/components/containers/Nav/NavBar';
 
-import { QUIZE_CATEGORIES } from '@/config/navigation';
+import { QUIZE_CATEGORIES } from '@/utils/getNavigation';
 
 const WithNavBar: FC = () => {
   const { resolvedTheme, setTheme } = useTheme();
