@@ -5,8 +5,9 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import Panel from '@/components/common/Panel';
 import { Button } from '@/components/ui/button';
 
+import { POPULAR_ICONS as getPopularIcons } from '@/data/getPopular';
+
 interface PopularCardProps {
-  type: string;
   tags: string[];
   title: string;
   description: string;
@@ -14,7 +15,6 @@ interface PopularCardProps {
 };
 
 const PopularCard: FC<PopularCardProps> = ({
-  type,
   tags,
   title,
   description,
@@ -26,15 +26,33 @@ const PopularCard: FC<PopularCardProps> = ({
         <div className='flex flex-col justify-between'>
           {tags && (
             <div className='relative w-full aspect-[3/1] flex items-center justify-center gap-4 bg-background/95 overflow-hidden'>
-              {tags.map((tag, index) => (
-                <div
-                  key={index}
-                  title={tag}
-                  className='relative z-10'
-                >
-                  {tag}
-                </div>
-              ))}
+              {tags.map((tag, index) => {
+                const getIcon = getPopularIcons.find((icon) => icon.name === tag);
+                if (!getIcon) return null;
+                return (
+                  <div
+                    key={index}
+                    title={tag}
+                    className='flex size-14'
+                  >
+                    <svg
+                      width="80"
+                      hanging="80"
+                      viewBox="0 0 24 24"
+                      fill='none'
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>{tag}</title>
+                      <path
+                        fillRule='evenodd'
+                        clipPath='evenodd'
+                        d={getIcon.icon}
+                        fill="hsl(var(--muted-foreground))"
+                      />
+                    </svg>
+                  </div>
+                )
+              })}
 
               <svg
                 className="absolute w-full h-auto object-cover object-center inset-0 z-10"
