@@ -1,0 +1,7 @@
+::-webkit-scrollbar {
+  @apply bg-none w-3;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted rounded-full hover:bg-primary transition-colors duration-300;
+}
