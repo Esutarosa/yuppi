@@ -36,6 +36,7 @@ const ProductCard: FC<ProductCardProps> = ({
       <Panel
         outerClassName='relative w-full h-full'
         innerClassName='relative overflow-hidden flex-1 flex flex-col items-center gap-5 lg:items-start justify-between w-full rounded-xl h-full'
+        hasActiveOnHover
       >
         <div className={cn(
           'relative z-10 flex flex-col lg:h-full gap-1 text-foreground mx-auto items-center text-center h-full px-6 py-8',

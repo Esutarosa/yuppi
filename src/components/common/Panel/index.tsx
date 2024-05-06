@@ -6,16 +6,21 @@ import { cn } from '@/lib/utils';
 interface PanelProps {
   outerClassName?: string
   innerClassName?: string
+  hasActiveOnHover?: boolean
 };
 
 const Panel: FC<PropsWithChildren<PanelProps>> = ({
   outerClassName,
   innerClassName,
+  hasActiveOnHover = false,
   children,
 }) => {
   return (
     <div className={cn(
       'relative border border-border rounded-xl bg-card transition-all flex items-center justify-center',
+      hasActiveOnHover
+        ? 'hover:bg-none hover:!border-primary'
+        : '',
       outerClassName
     )}>
       <div className={cn(
