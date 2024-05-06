@@ -2,6 +2,7 @@ import type { FC } from 'react';
 import Link from 'next/link';
 
 import Panel from '@/components/common/Panel';
+import GridPattern from '@/components/common/GridPattern';
 
 interface PopularCardProps {
   type: string;
@@ -37,6 +38,12 @@ const PopularCard: FC<PopularCardProps> = ({
               ))}
             </div>
           )}
+          <GridPattern
+            viewBox='440, 300'
+            translate='219 174.242'
+            scale='185.324'
+            radial='1'
+          />
           <div className='p-5 flex flex-col gap-2 border-t border-muted'>
             <span className="flex items-start justify-between">
               <h4 className="text-foreground text-lg">{title}</h4>
