@@ -19,7 +19,7 @@ const Panel: FC<PropsWithChildren<PanelProps>> = ({
     <div className={cn(
       'relative border border-border rounded-xl bg-card transition-all flex items-center justify-center',
       hasActiveOnHover
-        ? 'hover:bg-none hover:!border-primary'
+        ? 'hover:bg-none hover:!border-accent-foreground/15'
         : '',
       outerClassName
     )}>

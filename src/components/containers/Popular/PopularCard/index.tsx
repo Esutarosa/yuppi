@@ -22,7 +22,7 @@ const PopularCard: FC<PopularCardProps> = ({
 }) => {
   return (
     <Link href={quiz_url} className='w-full h-full grid items-stretch justify-items-stretch'>
-      <Panel innerClassName='bg-card group/panel'>
+      <Panel innerClassName='bg-card group/panel' hasActiveOnHover>
         <div className='flex flex-col justify-between'>
           {tags && (
             <div className='relative w-full aspect-[3/1] flex items-center justify-center gap-4 bg-background/95 overflow-hidden'>
