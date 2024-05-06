@@ -1,10 +1,13 @@
 .container {
-  width: 100px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: hidden;
+  background: hsl(var(--background));
+  z-index: 1000;
 }
 
 .loader {
@@ -15,16 +18,32 @@
   top: 50%;
   margin: -25px auto 0;
   border-radius: 50%;
-  background: #000000;
-  background: -moz-linear-gradient(left, #000000 10%, rgb(255, 255, 255) 50%);
+  background: hsl(var(--background));
+  background: -moz-linear-gradient(
+    left,
+    hsl(var(--foreground)) 10%,
+    hsl(var(--background)) 50%
+  );
   background: -webkit-linear-gradient(
     left,
-    #000000 10%,
-    rgb(255, 255, 255) 50%
+    hsl(var(--foreground)) 10%,
+    hsl(var(--background)) 50%
   );
-  background: -o-linear-gradient(left, #000000 10%, rgb(255, 255, 255) 50%);
-  background: -ms-linear-gradient(left, #000000 10%, rgb(255, 255, 255) 50%);
-  background: linear-gradient(to right, #000000 10%, rgb(255, 255, 255) 50%);
+  background: -o-linear-gradient(
+    left,
+    hsl(var(--foreground)) 10%,
+    hsl(var(--background)) 50%
+  );
+  background: -ms-linear-gradient(
+    left,
+    hsl(var(--foreground)) 10%,
+    hsl(var(--background)) 50%
+  );
+  background: linear-gradient(
+    to right,
+    hsl(var(--foreground)) 10%,
+    hsl(var(--background)) 50%
+  );
 
   position: relative;
   -webkit-animation: loader 1.5s infinite linear;
@@ -40,7 +59,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: black;
+    background: hsl(var(--foreground));
     border-radius: 100% 0 0 0;
   }
 
@@ -49,7 +68,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: white;
+    background: hsl(var(--background));
     margin: auto;
     position: absolute;
     top: 0;
