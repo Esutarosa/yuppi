@@ -3,8 +3,7 @@ export const POPULAR_DATA = [
     type: 'popular',
     tags: ['Next.js', 'Vercel'],
     title: 'Cool Next.js Quiz',
-    description: 'Lorem ipsum dolor sit amet',
-    quiz_name: 'next.js',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     quiz_url: '/',
   },
   {
@@ -12,7 +11,6 @@ export const POPULAR_DATA = [
     tags: ['Next.js', "PostgreSQL"],
     title: 'Cool Next.js Quiz',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    quiz_name: 'next.js',
     quiz_url: '/',
   },
   {
@@ -20,15 +18,13 @@ export const POPULAR_DATA = [
     tags: ['Next.js'],
     title: 'Cool Next.js Quiz',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    quiz_name: 'next.js',
     quiz_url: '/',
   },
   {
     type: 'popular',
     tags: ['Next.js', 'OpenAI', 'Vercel'],
     title: 'Cool Next.js Quiz',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    quiz_name: 'next.js',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     quiz_url: '/',
   },
   {
@@ -36,7 +32,6 @@ export const POPULAR_DATA = [
     tags: ['Next.js'],
     title: 'Cool Next.js Quiz',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    quiz_name: 'next.js',
     quiz_url: '/',
   },
   {
@@ -44,7 +39,6 @@ export const POPULAR_DATA = [
     tags: ['React'],
     title: 'Cool React Quiz',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    quiz_name: 'next.js',
     quiz_url: '/',
   },
 ];
