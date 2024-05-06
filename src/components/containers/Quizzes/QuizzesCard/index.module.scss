@@ -1,0 +1,32 @@
+@import "/src/styles/mixins.scss";
+
+.quizze {
+    width: 100%;
+    height: auto;
+
+    &__card:nth-child(2n) {
+        background-color: #ffffff12;
+    }
+    
+    &__card {
+        @apply rounded-sm;
+        background-color:transparent;
+        height: 43px;
+
+        @include flex(space-around,center,row,none)
+    }
+
+    &__title {
+        color: white;
+        transition: .3s ease;
+        &:hover {
+            color: #1ba3ff;
+        }
+
+    }
+
+    &__difficulty {
+        color: #ffb300;
+    }
+
+}
