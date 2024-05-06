@@ -6,11 +6,11 @@ import WithPopular from '@/components/withPopular';
 
 const Home: FC = () => {
   return (
-    <main className='relative min-h-screen'>
+    <>
       <WithHero />
       <WithProducts />
       <WithPopular />
-    </main>
+    </>
   );
 };
 

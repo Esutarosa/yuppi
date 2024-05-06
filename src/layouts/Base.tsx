@@ -9,11 +9,11 @@ import WithFooter from '@/components/withFooter';
 const BaseLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={cn(
-      'min-w-[320px] min-h-screen bg-background antialiased',
+      'min-w-[320px] bg-background antialiased',
     )}>
       <WithNavBar />
 
-      <main className='container'>
+      <main className='container min-h-screen'>
         {children}
       </main>
 
