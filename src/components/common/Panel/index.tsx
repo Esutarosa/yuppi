@@ -15,11 +15,11 @@ const Panel: FC<PropsWithChildren<PanelProps>> = ({
 }) => {
   return (
     <div className={cn(
-      'relative border border-primary/75 dark:border-none rounded-xl p-px bg-surface-100 bg-gradient-to-b from-border to-border/50 dark:to-surface-100 transition-all flex items-center justify-center',
+      'relative border border-border rounded-xl bg-card transition-all flex items-center justify-center',
       outerClassName
     )}>
       <div className={cn(
-        'relative z-10 w-full h-full rounded-xl bg-surface-100 overflow-hidden text-foreground-light',
+        'relative z-10 w-full h-full rounded-xl bg-card overflow-hidden text-foreground',
         innerClassName
       )}>
         {children}

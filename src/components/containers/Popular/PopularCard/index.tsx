@@ -86,7 +86,6 @@ const PopularCard: FC<PopularCardProps> = ({
             {quiz_url && (
               <Button
                 size="lg"
-                type="button"
                 className="group group-hover/panel:text-foreground overflow-hidden text-muted-foreground !bg-transparent !p-0"
               >
                 Start trying
