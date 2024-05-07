@@ -8,8 +8,8 @@ import { PROBLEMS_TAGS as getProblemsTags } from "@/data/getTags";
 const Tags: FC = () => {
   return (
     <div className="flex items-center gap-4 overflow-hidden select-none">
-      {getProblemsTags.map((tag) => (
-        <Button variant="outline">
+      {getProblemsTags.map((tag, index) => (
+        <Button key={index} variant="outline">
           <Link href="/" className="flex items-center gap-2 justify-center">
             <svg
               width="24"

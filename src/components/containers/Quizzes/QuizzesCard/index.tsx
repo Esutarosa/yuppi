@@ -12,7 +12,7 @@ const QuizzesCard: FC = () => {
             <p>Status</p>
           </div>
           <div className={style.quizze__title}>
-              <Link href="/">1. Two Sum</Link>
+            <Link href="/">1. Two Sum</Link>
           </div>
           <div className={style.quizze__lang}>
             <p>Java Script</p>
@@ -26,7 +26,7 @@ const QuizzesCard: FC = () => {
             <p>Status</p>
           </div>
           <div className={style.quizze__title}>
-              <Link href="/">1. Two Sum</Link>
+            <Link href="/">1. Two Sum</Link>
           </div>
           <div className={style.quizze__lang}>
             <p>Java Script</p>
@@ -40,7 +40,7 @@ const QuizzesCard: FC = () => {
             <p>Status</p>
           </div>
           <div className={style.quizze__title}>
-              <Link href="/">1. Two Sum</Link>
+            <Link href="/">1. Two Sum</Link>
           </div>
           <div className={style.quizze__lang}>
             <p>Java Script</p>
@@ -54,7 +54,7 @@ const QuizzesCard: FC = () => {
             <p>Status</p>
           </div>
           <div className={style.quizze__title}>
-              <Link href="/">1. Two Sum</Link>
+            <Link href="/">1. Two Sum</Link>
           </div>
           <div className={style.quizze__lang}>
             <p>Java Script</p>
