@@ -5,7 +5,7 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import Panel from '@/components/common/Panel';
 import { Button } from '@/components/ui/button';
 
-import { POPULAR_ICONS as getPopularIcons } from '@/data/getPopular';
+import { POPULAR_ICONS as getPopularIcons } from '@/data/getPopularCard';
 
 interface PopularCardProps {
   tags: string[];
