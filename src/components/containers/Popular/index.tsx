@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import SectionContainer from '@/layouts/SectionContainer';
 import PopularCard from '@/components/containers/Popular/PopularCard';
 
-import { POPULAR_DATA as getPopular } from '@/data/getPopular';
+import { POPULAR_DATA as getPopular } from '@/data/getPopularCard';
 
 const Popular: FC = () => {
   return (
