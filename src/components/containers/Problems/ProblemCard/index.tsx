@@ -1,47 +1,21 @@
 import type { FC } from "react";
-
 import Link from "next/link";
+
 import Panel from "@/components/common/Panel";
 import GridPattern from "@/components/common/GridPattern";
+import RenderSVG from "@/components/common/RenderSVG";
 
 interface InfoData {
   like?: number;
   view?: number;
   author?: string;
   icon: string;
-}
+};
 
 interface ProblemCardProps {
   title: string;
   info: InfoData[];
   tags: string[];
-}
-
-const RenderSVG = ({
-  icon,
-  width = 24,
-  height = 24,
-}: {
-  icon: string;
-  width?: number;
-  height?: number;
-}) => {
-  return (
-    <svg
-      width={width}
-      height={height}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fillRule="evenodd"
-        clipPath="evenodd"
-        d={icon}
-        fill="hsl(var(--muted-foreground))"
-      />
-    </svg>
-  );
 };
 
 const ProblemCard: FC<ProblemCardProps> = ({ title, info, tags }) => {
