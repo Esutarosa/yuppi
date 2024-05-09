@@ -5,7 +5,7 @@ import { DIRECTION_ICONS as getDirections } from '@/data/getDirections';
 
 const Directions: FC = () => {
   return (
-    <div className='w-full sm:max-w-lg mt-4 md:mt-3 lg:ml-0 flex flex-wrap items-center justify-center gap-2 xs:gap-4 sm:flex-nowrap'>
+    <div className='w-full sm:max-w-lg mt-4 lg:ml-0 flex flex-wrap items-center justify-center gap-2 xs:gap-4 sm:flex-nowrap'>
       {getDirections.map((item) => (
         <Link
           key={item.key}
