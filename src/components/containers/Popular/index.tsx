@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import SectionContainer from '@/layouts/SectionContainer';
@@ -9,25 +8,7 @@ import { POPULAR_DATA as getPopular } from '@/data/getPopularCard';
 
 const Popular: FC = () => {
   return (
-    <SectionContainer id='popular' className='md:pt-12 xl:pt-32'>
-      <div className='text-center'>
-        <h2 className='text-3xl'>Most Popular</h2>
-        <p className='text-muted-foreground my-3 pt-2'>Try your hand at the most popular quizzes and problems now</p>
-        <div className='flex justify-center gap-2 py-4'>
-          <Button variant="secondary">
-            <Link href="/" className='focus:outline-none'>
-              View all quizzes
-            </Link>
-          </Button>
-
-          <Button variant="outline">
-            <Link href="/" className='focus:outline-none'>
-              Check more problems
-            </Link>
-          </Button>
-        </div>
-      </div>
-
+    <SectionContainer id='popular' className='-mt-12'>
       <div className='mt-16 grid grid-cols-12 gap-5'>
         {getPopular.map((popular, index) => (
           <div
