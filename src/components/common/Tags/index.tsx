@@ -3,12 +3,12 @@ import type { FC } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-import { PROBLEMS_TAGS as getProblemsTags } from "@/data/getTags";
+import { QUIZZES_TAGS as getQuizzesTags } from "@/data/getTags";
 
 const Tags: FC = () => {
   return (
     <div className="flex items-center gap-4 overflow-hidden select-none flex-wrap">
-      {getProblemsTags.map((tag, index) => (
+      {getQuizzesTags.map((tag, index) => (
         <Button key={index} variant="outline">
           <Link href="/" className="flex items-center gap-2 justify-center">
             <svg

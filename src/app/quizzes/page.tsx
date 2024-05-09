@@ -1,5 +1,6 @@
-import WithQuizzes from '@/components/withQuizzes';
-import type { FC } from 'react';
+import type { FC } from "react";
+
+import WithQuizzes from "@/components/withQuizzes";
 
 const QuizzesPage: FC = () => {
   return (

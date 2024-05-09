@@ -1,4 +1,4 @@
-export const PROBLEMS_DATA = [
+export const QUIZZES_DATA = [
   {
     title: "Median of Two Sorted Arrays",
     info: [

@@ -12,13 +12,13 @@ interface InfoData {
   icon: string;
 };
 
-interface ProblemCardProps {
+interface QuizzesCardProps {
   title: string;
   info: InfoData[];
   tags: string[];
 };
 
-const ProblemCard: FC<ProblemCardProps> = ({ title, info, tags }) => {
+const QuizzesCard: FC<QuizzesCardProps> = ({ title, info, tags }) => {
   return (
     <Link href="/" className="w-full h-full">
       <Panel hasActiveOnHover innerClassName="relative">
@@ -48,4 +48,4 @@ const ProblemCard: FC<ProblemCardProps> = ({ title, info, tags }) => {
   );
 };
 
-export default ProblemCard;
+export default QuizzesCard;
