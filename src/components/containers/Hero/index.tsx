@@ -21,7 +21,7 @@ const Hero: FC = () => {
               </Button>
 
               <Button asChild variant="outline">
-                <Link href="/problems" aria-label="Problems">Problems</Link>
+                <Link href="/discuss" aria-label="Discuss">Discuss</Link>
               </Button>
             </div>
             <div className="flex text-center flex-col items-center my-4 lg:mt-6">
