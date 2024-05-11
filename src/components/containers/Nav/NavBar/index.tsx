@@ -4,6 +4,7 @@ import type { FC, HTMLAttributeAnchorTarget } from 'react';
 import type { FormattedMessage } from '@/types/i18n';
 
 import ThemeToggle from '@/components/common/ThemeToggle';
+import RegisterButton from '@/components/common/RegisterButton';
 import NavMobile from '@/components/containers/Nav/NavMobile';
 import NavItem from '@/components/containers/Nav/NavItem';
 import GitHub from '@/components/icons/social/GitHub';
@@ -42,6 +43,8 @@ const NavBar: FC<NavBarProps> = ({
         </div>
 
         <div className={style.actionsWrapper}>
+          <RegisterButton />
+
           <Link
             className={style.github}
             href="https://github.com/Esutarosa/yuppi"
