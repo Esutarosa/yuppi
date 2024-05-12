@@ -12,7 +12,7 @@ const RegisterButton: FC = () => {
       <HoverBorderGradient
         containerClassName='rounded-full'
         as='button'
-        className="bg-background text-foreground flex items-center space-x-2"
+        className="flex items-center"
       >
         <small>Start with account!</small>
       </HoverBorderGradient>

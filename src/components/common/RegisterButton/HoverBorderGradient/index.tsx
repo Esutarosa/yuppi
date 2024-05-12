@@ -45,7 +45,7 @@ const HoverBorderGradient: FC<HoverBorderGradientProps> = ({
     right: "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
   };
 
-  const highlight = "radial-gradient(75% 181.15942028985506% at 50% 50%, #3275F8 0%, rgba(255, 255, 255, 0) 100%)";
+  const highlight = "radial-gradient(75% 181.15942028985506% at 50% 50%, #16a34a 0%, rgba(255, 255, 255, 0) 100%)";
 
   useEffect(() => {
     if (!hovered) {
@@ -63,7 +63,7 @@ const HoverBorderGradient: FC<HoverBorderGradientProps> = ({
       }}
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex rounded-full border content-center bg-background/20 hover:bg-background/10 transition duration-500 dark:bg-foreground/20 items-center flex-col flex-nowrap gap-4 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+        "relative flex rounded-full border border-foreground/45 content-center transition duration-500 items-center flex-col flex-nowrap gap-4 h-min justify-center overflow-visible p-px decoration-clone w-fit",
         containerClassName
       )}
       {...props}
@@ -99,7 +99,7 @@ const HoverBorderGradient: FC<HoverBorderGradientProps> = ({
           duration: duration ?? 1,
         }}
       />
-      <div className="bg-background absolute z-1 flex-none inset-[2px] rounded-[100px]" />
+      <div className="bg-background absolute z-1 flex-none inset-[2px] rounded-full" />
     </Tag>
   );
 };
