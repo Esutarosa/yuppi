@@ -8,7 +8,7 @@ import { POPULAR_DATA as getPopular } from '@/data/getPopularCard';
 
 const Popular: FC = () => {
   return (
-    <SectionContainer id='popular' className='-mt-12'>
+    <SectionContainer id='popular' className='-mt-6'>
       <div className='mt-16 grid grid-cols-12 gap-5'>
         {getPopular.map((popular, index) => (
           <div

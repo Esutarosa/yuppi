@@ -7,7 +7,7 @@ const RegisterButton: FC = () => {
   return (
     <Link
       href='/register'
-      className='mx-4 flex justify-center text-center'
+      className='mx-2 flex justify-center text-center'
     >
       <HoverBorderGradient
         containerClassName='rounded-full'

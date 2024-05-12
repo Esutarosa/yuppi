@@ -24,7 +24,7 @@ const Hero: FC = () => {
                 <Link href="/discuss" aria-label="Discuss">Discuss</Link>
               </Button>
             </div>
-            <div className="flex text-center flex-col items-center my-4 lg:mt-6">
+            <div className="flex text-center flex-col items-center my-4">
               <small className="text-xs text-muted-foreground">
                 Currently more than 10+ directions are supported
               </small>
