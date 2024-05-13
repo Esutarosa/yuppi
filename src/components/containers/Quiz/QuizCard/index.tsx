@@ -2,9 +2,10 @@
 
 import type { FC } from 'react';
 import { useState } from "react";
-
-import { QUESTIONS } from '@/data/quizzesQuestions';
 import { cn } from '@/lib/utils';
+
+import ScoreBar from '@/components/containers/Quiz/ScoreBar';
+import { QUESTIONS } from '@/data/quizzesQuestions';
 import { Button } from '@/components/ui/button';
 
 interface QuizCardProps {
@@ -93,7 +94,11 @@ const QuizCard: FC<QuizCardProps> = ({ name }) => {
           </div>
         ) : (
           <>
-
+            <ScoreBar
+              quizResult={quizResult}
+              questions={questions}
+              name={name}
+            />
           </>
         )}
       </div>
