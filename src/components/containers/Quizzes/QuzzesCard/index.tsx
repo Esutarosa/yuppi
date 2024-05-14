@@ -13,14 +13,15 @@ interface InfoData {
 };
 
 interface QuizzesCardProps {
+  slug: string;
   title: string;
   info: InfoData[];
   tags: string[];
 };
 
-const QuizzesCard: FC<QuizzesCardProps> = ({ title, info, tags }) => {
+const QuizzesCard: FC<QuizzesCardProps> = ({ title, info, tags, slug }) => {
   return (
-    <Link href="/" className="w-full h-full">
+    <Link href={`/quizzes/${slug}`} className="w-full h-full">
       <Panel hasActiveOnHover innerClassName="relative">
         <div className="p-5 flex justify-between flex-wrap gap-3">
           <div className="basis-full sm:basis-auto">

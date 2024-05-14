@@ -1,5 +1,6 @@
 export const QUIZZES_DATA = [
   {
+    slug: "median-of-two-sorted-arrays",
     title: "Median of Two Sorted Arrays",
     info: [
       {
@@ -21,6 +22,7 @@ export const QUIZZES_DATA = [
     ],
   },
   {
+    slug: "median-of-two-sorted-arrays",
     title: "Median of Two Sorted Arrays",
     info: [
       {
@@ -42,6 +44,7 @@ export const QUIZZES_DATA = [
     ],
   },
   {
+    slug: "median-of-two-sorted-arrays",
     title: "Median of Two Sorted Arrays",
     info: [
       {

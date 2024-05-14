@@ -11,9 +11,9 @@ const Quizzes: FC = () => {
     <SectionContainer>
       <Tags />
       <div className="flex flex-col gap-3 mt-3">
-        {getQuizzesData.map((problem, index) => (
+        {getQuizzesData.map((quiz, index) => (
           <div key={index}>
-            <QuzzesCard {...problem} />
+            <QuzzesCard {...quiz} />
           </div>
         ))}
       </div>

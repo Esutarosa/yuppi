@@ -2,7 +2,13 @@ import type { FC } from 'react';
 
 import WithQuiz from '@/components/withQuizze';
 
-const QuizPage: FC = () => {
+interface QuizPageProps {
+  params: {
+    slug: string
+  };
+};
+
+const QuizPage: FC<QuizPageProps> = ({ params }) => {
   return (
     <>
       <WithQuiz />
