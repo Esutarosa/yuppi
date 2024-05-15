@@ -18,8 +18,9 @@ const ScoreBar: FC<ScoreBarProps> = ({
   name,
 }) => {
   const passPercentage = 20;
-  const percentage = (quizResult.score / (questions.length * 5)) * 100;
-  const status = percentage >= passPercentage ? "Pass" : "Fail";
+  const percentage = ((quizResult.score / (questions.length * 5)) * 100);
+  const roundedPercentage = parseFloat(percentage.toFixed(1));
+  const status = roundedPercentage >= passPercentage ? "Pass" : "Fail";
 
   return (
     <>
