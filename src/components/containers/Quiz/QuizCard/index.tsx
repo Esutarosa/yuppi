@@ -5,8 +5,10 @@ import { useState } from "react";
 import { cn } from '@/lib/utils';
 
 import ScoreBar from '@/components/containers/Quiz/ScoreBar';
-import { QUESTIONS } from '@/data/quizzesQuestions';
 import { Button } from '@/components/ui/button';
+
+import quizzes from "@/data/quizzes.json";
+
 
 interface QuizCardProps {
   name: string;
@@ -28,7 +30,7 @@ const QuizCard: FC<QuizCardProps> = ({ name }) => {
     wrongAnswers: 0
   });
 
-  const { questions } = QUESTIONS;
+  const { questions } = quizzes[0]
   const { question, answers, correctAnswer } = questions[currentQuestionIndex];
 
   const onAnswerSelected = (answer: string, index: number) => {
